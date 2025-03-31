@@ -17,8 +17,8 @@ API RESTful para gerenciamento de duelistas desenvolvida com Spring Boot.
 
 1. Clone o repositório  
 ```bash
-git clone https://github.com/seu-usuario/duelistas-api.git
-cd duelistas-api
+git clone https://github.com/Luan-Diniz02/DesafioBitsJr.git
+cd DesafioBitsJr
 ```
 2. Configure o Projeto  
 O projeto usa Maven para gerenciar dependências. Certifique-se de que o arquivo pom.xml contém as dependências necessárias.
