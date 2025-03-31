@@ -21,15 +21,37 @@ git clone https://github.com/Luan-Diniz02/DesafioBitsJr.git
 cd DesafioBitsJr
 ```
 2. Configure o Projeto  
-O projeto usa Maven para gerenciar dependências. Certifique-se de que o arquivo pom.xml contém as dependências necessárias.
+O projeto usa Maven para gerenciar dependências. Certifique-se de que o arquivo pom.xml contém as dependências necessárias. Se o projeto foi importado corretamente pode pular esse passo.
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>6.1.14</version>
+    </dependency>
 
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>3.3.4</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-validation</artifactId>
+        <version>3.3.4</version>
+    </dependency>
+
+</dependencies>
+```
 3. Compile o Projeto  
-No diretório raiz do projeto, execute o comando Maven para baixar as dependências e compilar o projeto:
+Compile o projeto utilizando uma IDE de sua preferência (IntelliJ, Eclipse, etc.) ou pela linha de comando.  
+Caso obte pela linha de comando, execute o seguinte comando no diretório raiz do projeto:
 ```bash
 mvn clean install
 ```
 4. Execute a API  
-Para rodar a API, use o comando Maven:
+Para iniciar a API, rode a classe Main.java ou use o comando Maven:
 ```bash
 mvn spring-boot:run
 ```
